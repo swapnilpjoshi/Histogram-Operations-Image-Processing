@@ -73,7 +73,7 @@ def open2():
 
     root.filename = filedialog.askopenfilename(
                                                 initialdir="D:\\GNR Academics\\GNR607 - SIP\\SIP Project\\Final py files",
-                                                title="Select file",
+                                                title="Select input image",
                                                 filetypes=(("jpg", "*.jpg"),("png","*.png"),("all files","*.*"))
                                                )
     img_gray = cv2.cvtColor(cv2.imread(root.filename), cv2.COLOR_BGR2GRAY)
@@ -84,7 +84,7 @@ def open2():
     globals()['img_dict'] = dict()
     root.filename = filedialog.askopenfilename(
                                                 initialdir="D:\\GNR Academics\\GNR607 - SIP\\SIP Project\\Final py files",
-                                                title="Select file",
+                                                title="Select reference image",
                                                 filetypes=(("jpg", "*.jpg"),("png","*.png"),("all files","*.*"))
                                                )
     img_gray = cv2.cvtColor(cv2.imread(root.filename), cv2.COLOR_BGR2GRAY)
